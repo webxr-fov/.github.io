@@ -79,10 +79,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
       let sb = '../media/gltf/control-shack/FlatShack';
       let se = '.gltf';
-      root = new Gltf2Node({url: sb + se});
+      let root = new Gltf2Node({url: sb + se});
 
       root.translation = vec3.fromValues(root.translation[0] + 5.23, root.translation[1] -5.2, root.translation[2] + 0.82);
-      app.scene.addNode(prims[i]);
+      app.scene.addNode(root);
 
       app.scene.standingStats(true);
 
